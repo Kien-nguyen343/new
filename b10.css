@@ -117,7 +117,6 @@ footer {
   }
   .container {
     color: white;
-    display: flex;
     width: 400px;
     margin: 0px auto;
     border-radius: 5px;
@@ -190,3 +189,25 @@ footer {
     font-size: 30px;
   }
   
+  .additional-section {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  
+  .additional-section .row {
+    margin-bottom: 5px;
+    display: flex;
+  }
+  
+  .additional-section .item {
+    display: flex;
+    flex-direction: column;
+    flex: 2; /*flex-shrink ( co lại ) flex-grow(dãn ra) và flex-basis ( xác định độ dài ban đầu )*/
+  }
+  
+  .additional-section .item .label {
+    font-weight: bold;
+  }
