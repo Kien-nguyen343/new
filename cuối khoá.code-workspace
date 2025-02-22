@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Mindx"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "cuối khoá"
+	}
+}
