@@ -119,10 +119,10 @@ footer {
     color: white;
     width: 400px;
     margin: 0px auto;
-    border-radius: 5px;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
-    border: 1px solid rgba(255, 255, 255, 0.233);
+    display: flex;
+    white-space: nowrap
   }
   
   .search-bar {
@@ -150,7 +150,6 @@ footer {
   #search-input {
     border: 0;
     outline: 0;
-    padding: 3px 3px 3px 20px;
     background: transparent;
     height: 20px;
     color: white;

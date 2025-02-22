@@ -5,13 +5,14 @@ const cityName = document.querySelector(".city-name");
 const weatherState = document.querySelector(".weather-state");
 const weatherIcon = document.querySelector(".weather-icon");
 const temperature = document.querySelector(".temperature");
-const city="Hồ Chí Minh City"
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=vi&units=metric`)
-.then(response => response.json())
-.then((data) => {
-    cityName.innerHTML = data.name || DEFAULT_VALUE;
-    weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
-    weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png` || DEFAULT_VALUE;
-    temperature.innerHTML = Math.round(data.main.temp) || DEFAULT_VALUE;          
+searchInput.addEventListener("change", (event) => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${API_KEY}&lang=vi&units=metric`)
+        .then(response => response.json())
+        .then((data) => {
+            cityName.innerHTML = data.name || DEFAULT_VALUE;
+            weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
+            weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png` || DEFAULT_VALUE;
+            temperature.innerHTML = Math.round(data.main.temp) || DEFAULT_VALUE;          
+        })
 })
