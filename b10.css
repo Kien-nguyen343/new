@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #007bff, #0056b3);
+    background: linear-gradient(90deg, green, lightgreen);
     text-align: center;
     color: white;
     padding: 20px 0;
