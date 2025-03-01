@@ -29,43 +29,9 @@ header {
 .navbar-toggler {
     border: none;
 }
-
-/* Search Bar */
-.search-bar {
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid white;
-}
-.search-icon {
-    position: absolute;
-    left: 10px;
-    cursor: pointer;
-    color: white;
-}
-#search-input {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 5px 30px;
-    background: transparent;
-    height: 30px;
-    color: white;
-    font-size: 16px;
-}
-#search-input::placeholder {
-    color: rgb(206, 206, 206);
-}
 #root {
     justify-content: center;
     align-items: center;
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -89,9 +55,6 @@ footer {
     padding: 15px 0;
     text-align: center;
 }
-.container{
-    justify-content: space-between;
-}
 * {
     margin: 0;
     padding: 0;
@@ -100,29 +63,21 @@ footer {
     box-sizing: border-box;
   }
   
-  body {
-    background-image: url("https://cdnb.artstation.com/p/assets/images/images/003/680/429/large/nova-ashbell-sc01-03.jpg?1476361405");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    backdrop-filter: blur(5px);
-  }
-  
   #root {
+    height: 25vh;
+    Width: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: row;
   }
-  .container {
+  .containerone {
     color: white;
     width: 400px;
     margin: 0px auto;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
     display: flex;
-    white-space: nowrap
+    white-space: nowrap;
+    text-align: center;
   }
   
   .search-bar {
@@ -209,4 +164,10 @@ footer {
   
   .additional-section .item .label {
     font-weight: bold;
+  }
+  .footer{
+
+  }
+  .group{
+
   }
